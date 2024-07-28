@@ -1,0 +1,26 @@
+[tool.pyright]
+venv = "venv"
+venvPath = "."
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "backtester_v2"
+version = "0.1.0"
+description = "Options backtesting framework for crypto strategies (based on Hegic model)"
+authors = [{ name = "CordilleraDev", email = "amrith@cordillera.dev" }]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["crypto", "backtesting", "trading"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["pandas", "matplotlib"]
+
+[tool.setuptools]
+packages = ["bobtester"]
